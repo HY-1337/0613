@@ -1,0 +1,47 @@
+[0.000] initConfigParams():  Configuration flags start
+[0.000] initConfigParams():   semihost-console-port          61236
+[0.000] initConfigParams():   semihosting                    "disabled"
+[0.000] initConfigParams():   external-init                  false
+[0.000] initConfigParams():   pend-halt-timeout              -1
+[0.000] initConfigParams():   halt                           false
+[0.000] initConfigParams():   config-file                    ""
+[0.000] initConfigParams():   persistent                     false
+[0.000] initConfigParams():  +log-file                       "D:\PWMADC/stlinkgdbserver_log.txt"
+[0.000] initConfigParams():  +log-level                      31
+[0.000] initConfigParams():  +port-number                    61234
+[0.000] initConfigParams():   verbose                        false
+[0.000] initConfigParams():   refresh-delay                  15
+[0.000] initConfigParams():   target-sel                     ""
+[0.000] initConfigParams():   pcm-pm-force                   false
+[0.000] initConfigParams():   incremental                    false
+[0.000] initConfigParams():   verify                         false
+[0.000] initConfigParams():  +swd                            true
+[0.000] initConfigParams():   swo-port                       61234
+[0.000] initConfigParams():   cpu-clock                      8000000
+[0.000] initConfigParams():   swo-clock-div                  128
+[0.000] initConfigParams():   initialize-reset               false
+[0.000] initConfigParams():   debuggers                      false
+[0.000] initConfigParams():   serial-number                  ""
+[0.000] initConfigParams():  +apid                           0
+[0.000] initConfigParams():  +attach                         true
+[0.000] initConfigParams():   shared                         false
+[0.000] initConfigParams():   erase-all                      false
+[0.000] initConfigParams():   memory-map                     ""
+[0.000] initConfigParams():   ext-memory-loaders             false
+[0.001] initConfigParams():   extload_init                   (null)
+[0.001] initConfigParams():   extload                        (null)
+[0.001] initConfigParams():  +stm32cubeprogrammer-path       "C:\Users\Lenovo\AppData\Local\stm32cube\bundles\programmer\2.22.0+st.1\bin"
+[0.001] initConfigParams():   temp-path                      ""
+[0.001] initConfigParams():   preserve-temps                 false
+[0.001] initConfigParams():  +frequency                      1000
+[0.001] initConfigParams():   licenses                       false
+[0.001] initConfigParams():   ignore-rest                    false
+[0.001] initConfigParams():   version                        false
+[0.001] initConfigParams():   help                           false
+[0.001] initConfigParams():  Configuration flags end
+[0.002] init():  STMicroelectronics ST-LINK GDB server. Version 7.13.0
+Copyright (c) 2026, STMicroelectronics. All rights reserved.
+[0.007] openDevice():  Device connect error
+[0.007] initServerContext():  
+Error in initializing ST-LINK device.
+Reason: [0.007] initServerContext():  Failed to connect to device. Please check power and cabling to target.

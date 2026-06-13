@@ -1,0 +1,54 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "stlinkgdbtarget",
+            "request": "launch",
+            "name": "STM32Cube: Launch ST-Link GDB Server",
+            "origin": "snippet",
+            "cwd": "${workspaceFolder}",
+            "preBuild": "${command:st-stm32-ide-debug-launch.build}",
+            "runEntry": "main",
+            "serverHost": "127.0.0.1",
+            "serverInterface": "SWD",
+            "serverInterfaceFrequency": "1000",
+            "serverReset": "Software system reset",
+            "serverStartupDelay": 1,
+            "verbose": true,
+            "serverLogFile": "${workspaceFolder}/stlinkgdbserver_log.txt",
+            "logFile": "${workspaceFolder}/gdbClient_log.txt",
+            "imagesAndSymbols": [
+                {
+                    "imageFileName": "${command:st-stm32-ide-debug-launch.get-projects-binary-from-context1}"
+                }
+            ]
+        },
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "OpenOCD: STM32F103C8T6",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/PWMADC.elf",
+            "servertype": "openocd",
+            "serverpath": "openocd",
+            "gdbPath": "C:/Users/Lenovo/AppData/Local/stm32cube/bundles/gnu-gdb-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gdb.exe",
+            "device": "STM32F103C8",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "searchDir": [
+                "C:/Users/Lenovo/scoop/apps/openocd/0.12.0/share/openocd/scripts"
+            ],
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "raw",
+            "postRestartCommands": [
+                "break main",
+                "continue"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+2026-6-8, 13:22:35.986 UTC
+[13:22:35.986 UTC] From client: initialize({"clientID":"vscode","clientName":"Visual Studio Code","adapterID":"stlinkgdbtarget","pathFormat":"path","linesStartAt1":true,"columnsStartAt1":true,"supportsVariableType":true,"supportsVariablePaging":true,"supportsRunInTerminalRequest":true,"locale":"zh-cn","supportsProgressReporting":true,"supportsInvalidatedEvent":true,"supportsMemoryReferences":true,"supportsArgsCanBeInterpretedByShell":true,"supportsMemoryEvent":true,"supportsStartDebuggingRequest":true,"supportsANSIStyling":true})
+[13:22:35.986 UTC] To client: {"seq":0,"type":"response","request_seq":1,"command":"initialize","success":true,"body":{"supportsEvaluateForHovers":true,"supportsConfigurationDoneRequest":true,"supportsSetVariable":true,"supportsConditionalBreakpoints":true,"supportsHitConditionalBreakpoints":true,"supportsLogPoints":true,"supportsFunctionBreakpoints":true,"supportsDisassembleRequest":true,"supportsReadMemoryRequest":true,"supportsWriteMemoryRequest":true,"supportsSteppingGranularity":true}}
+[13:22:35.986 UTC] From client: launch({"type":"stlinkgdbtarget","request":"launch","name":"STM32Cube: Launch ST-Link GDB Server","origin":"snippet","cwd":"D:\\PWMADC","preBuild":"${command:st-stm32-ide-debug-launch.build}","runEntry":"main","serverHost":"127.0.0.1","serverInterface":"SWD","serverInterfaceFrequency":"1000","serverReset":"Software system reset","serverStartupDelay":1,"verbose":true,"serverLogFile":"D:\\PWMADC/stlinkgdbserver_log.txt","logFile":"D:\\PWMADC/gdbClient_log.txt","imagesAndSymbols":[{"imageFileName":"D:/PWMADC/build/Debug/PWMADC.elf"}],"__configurationTarget":6,"__sessionId":"8fef0cc3-c7ff-40e0-b33a-1cd1d84309a4"})
+[13:22:35.986 UTC] From Debug Session: start Launch Sequence
+[13:22:36.435 UTC] From client: adapter/getDebugConfResolved(undefined)
+[13:22:36.436 UTC] To client: {"seq":0,"type":"response","request_seq":3,"command":"adapter/getDebugConfResolved","success":true,"body":{"type":"stlinkgdbtarget","request":"launch","name":"STM32Cube: Launch ST-Link GDB Server","origin":"snippet","cwd":"D:\\PWMADC","preBuild":"${command:st-stm32-ide-debug-launch.build}","runEntry":"main","serverHost":"127.0.0.1","serverInterface":"SWD","serverInterfaceFrequency":"1000","serverReset":"Software system reset","serverStartupDelay":1,"verbose":true,"serverLogFile":"D:\\PWMADC/stlinkgdbserver_log.txt","logFile":"D:\\PWMADC/gdbClient_log.txt","imagesAndSymbols":[{"imageFileName":"D:/PWMADC/build/Debug/PWMADC.elf"}],"__configurationTarget":6,"__sessionId":"8fef0cc3-c7ff-40e0-b33a-1cd1d84309a4","__pid":29788,"__initialConfig":{"type":"stlinkgdbtarget","request":"launch","name":"STM32Cube: Launch ST-Link GDB Server","origin":"snippet","cwd":"D:\\PWMADC","preBuild":"${command:st-stm32-ide-debug-launch.build}","runEntry":"main","serverHost":"127.0.0.1","serverInterface":"SWD","serverInterfaceFrequency":"1000","serverReset":"Software system reset","serverStartupDelay":1,"verbose":true,"serverLogFile":"D:\\PWMADC/stlinkgdbserver_log.txt","logFile":"D:\\PWMADC/gdbClient_log.txt","imagesAndSymbols":[{"imageFileName":"D:/PWMADC/build/Debug/PWMADC.elf"}],"__configurationTarget":6,"__sessionId":"8fef0cc3-c7ff-40e0-b33a-1cd1d84309a4","__pid":29788},"deviceName":"STM32F103C8T6","deviceCore":"Cortex-M3","deviceTrustzone":"TZ-disabled"}}
+[13:22:36.614 UTC] From Debug Session: Step pre-build
+[13:22:36.614 UTC] From Debug Session: Step validate debug configuration
+[13:22:36.692 UTC] From Debug Session: Step ST-Link device check
+[13:22:36.692 UTC] From Debug Session: Step start STLink GDB Server
+[13:22:37.804 UTC] GDB Server command line executed: cube stlink-gdbserver -cp C:\Users\Lenovo\AppData\Local\stm32cube\bundles\programmer\2.22.0+st.1\bin -g -d --frequency 1000 -m 0 -p 61234 -f D:\PWMADC/stlinkgdbserver_log.txt -l 31
+[13:22:37.841 UTC] From Debug Session: Step check genuine ST device
+[13:22:37.841 UTC] From Debug Session: Step start RTOS Proxie(s)
+[13:22:37.841 UTC] From Debug Session: Step start gdb client debug
+[13:22:37.887 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"server","output":"\r\n\r\nSTMicroelectronics ST-LINK GDB server. Version 7.13.0\r\nCopyright (c) 2026, STMicroelectronics. All rights reserved.\r\n\r\nStarting server with the following options:\r\n        Persistent Mode            : Disabled\r\n        LogFile Name               : D:\\PWMADC/stlinkgdbserver_log.txt\r\n        Logging Level              : 31\r\n        Listen Port Number         : 61234\r\n        Status Refresh Delay       : 15s\r\n        Verbose Mode               : Disabled\r\n        SWD Debug                  : Enabled\r\n\r\n"}}
+[13:22:37.893 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"server","output":"Device connect error\r\n\r\nError in initializing ST-LINK device.\r\nReason: Failed to connect to device. Please check power and cabling to target.\r\n"}}
+[13:22:37.898 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"server","output":"cube has exited with code 1"}}
+[13:22:38.080 UTC] GDB notify async: thread-group-added,id="i1"
+[13:22:38.080 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"GNU gdb (GNU Tools for STM32 14.3.rel1.20251027-0700) 15.2.90.20241229-git\n"}}
+[13:22:38.080 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"Copyright (C) 2024 Free Software Foundation, Inc.\n"}}
+[13:22:38.080 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law."}}
+[13:22:38.080 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"\nType \"show copying\" and \"show warranty\" for details.\n"}}
+[13:22:38.080 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"This GDB was configured as \"--host=x86_64-w64-mingw32 --target=arm-none-eabi\".\n"}}
+[13:22:38.081 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"Type \"show configuration\" for configuration details.\n"}}
+[13:22:38.081 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"For bug reporting instructions, please see:\n"}}
+[13:22:38.081 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"<https://www.gnu.org/software/gdb/bugs/>.\n"}}
+[13:22:38.081 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"Find the GDB manual and other documentation resources online at:\n    <"}}
+[13:22:38.081 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"http://www.gnu.org/software/gdb/documentation/>.\n\n"}}
+[13:22:38.081 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"For help, type \"help\".\n"}}
+[13:22:38.081 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"Type \"apropos word\" to search for commands related to \"word\".\n"}}
+[13:22:38.081 UTC] GDB command: 0 -gdb-set non-stop off
+[13:22:38.097 UTC] GDB result: 0 done
+[13:22:38.097 UTC] GDB command: 1 -gdb-set mi-async on
+[13:22:38.112 UTC] GDB result: 1 done
+[13:22:38.112 UTC] From Debug Session: Step load program
+[13:22:38.112 UTC] GDB command: 2 -file-exec-and-symbols "D:/PWMADC/build/Debug/PWMADC.elf"
+[13:22:38.130 UTC] GDB result: 2 done
+[13:22:38.131 UTC] From Debug Session: Step load symbols (STLink adapter)
+[13:22:38.131 UTC] GDB command: 3 -enable-pretty-printing
+[13:22:38.143 UTC] GDB result: 3 done
+[13:22:38.143 UTC] From Debug Session: Step load symbols D:/PWMADC/build/Debug/PWMADC.elf (STLink adapter)
+[13:22:38.143 UTC] GDB command: 4 add-symbol-file "D:/PWMADC/build/Debug/PWMADC.elf" 
+[13:22:38.159 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"log","output":"add-symbol-file \"D:/PWMADC/build/Debug/PWMADC.elf\" \n"}}
+[13:22:38.159 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"add symbol table from file \"D:/PWMADC/build/Debug/PWMADC.elf\"\n"}}
+[13:22:38.159 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"(y or n) [answered Y; input not from terminal]\n"}}
+[13:22:38.159 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"stdout","output":"Reading symbols from D:/PWMADC/build/Debug/PWMADC.elf...\n"}}
+[13:22:38.159 UTC] GDB result: 4 done
+[13:22:38.159 UTC] From Debug Session: Step connect to target
+[13:22:38.159 UTC] GDB command: 5 -target-select remote 127.0.0.1:61234
+[13:22:53.503 UTC] GDB result: 5 error,msg="could not connect (error 138): \317\265\315\263\312\324\315\274\275\253\307\375\266\257\306\367\272\317\262\242\265\275\272\317\262\242\307\375\266\257\306\367\311\317\265\304\304\277\302\274\241\243"
+[13:22:53.503 UTC] [Error] Failed to decode cstring 'could not connect (error 138): ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£'. {}
+[13:22:53.504 UTC] From Debug Session: Step cleanup Gdb Client.
+[13:22:53.504 UTC] GDB command: 6 -gdb-exit
+[13:22:53.504 UTC] From Debug Session: Step cleanup GDB Server
+[13:22:53.516 UTC] GDB result: 6 exit
+[13:22:53.516 UTC] To client: {"seq":0,"type":"response","request_seq":2,"command":"launch","success":false,"message":"bound doStepConnectToTarget Failed: could not connect (error 138): ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£","body":{"error":{"id":1,"format":"bound doStepConnectToTarget Failed: could not connect (error 138): ÏµÍ³ÊÔÍ¼½«Çý¶¯Æ÷ºÏ²¢µ½ºÏ²¢Çý¶¯Æ÷ÉÏµÄÄ¿Â¼¡£","showUser":true}}}
+[13:22:53.518 UTC] From client: disconnect({"restart":false})
+[13:22:53.518 UTC] GDB command: 7 -gdb-exit
